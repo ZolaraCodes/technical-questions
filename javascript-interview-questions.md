@@ -397,16 +397,22 @@ Currying is a transformation of functions that translates a function from callab
 
 - [x] What are the benefits of using spread syntax and how is it differenct from rest syntax?
 - **Explain:**
+The spread syntax expands the elements of an array or object into individual variables, while rest syntax condenses multiple elements into a single element[1][2][3]. Spread syntax is useful for copying arrays and objects, as well as combining them[1][2]. Rest syntax is useful for gathering the rest of the list of arguments into an array[4].
 - **Use:**
 - **Example:**
 
 - [x] How can you share code between files?
 - **Explain:**
+To share code between files in JavaScript, use the export and import statement[1][2]. This allows us to share code between files using the native ES6 module system[2], making code reuse easy while organizing large projects[3]. An example of this is exporting variables or functions from an ES6 module in a service component and importing them into other components[4].
 - **Use:**
 - **Example:**
 
 - [x] Why you migh want to create static class members?
 - **Explain:**
+Static class members are useful when a field needs to exist only once per class, not on every instance created
+. This is beneficial as the compiler can check to make sure that no instance members are accidentally added, and static data is initialized to zero when the first object is created
+. Static methods are typically used to implement functions that belong to the class as a whole, but not to any particular object of it
+
 - **Use:**
 - **Example:**
 
@@ -414,30 +420,39 @@ Currying is a transformation of functions that translates a function from callab
 
 - [x] Can you name two programming paradigms important for JavaScript app developers?
 - **Explain:**
+Two important programming paradigms for JavaScript app developers are object-oriented programming and functional programming Other paradigms include imperative/procedural programming, declarative programming, and event-driven programming
+
 - **Use:**
 - **Example:**
 
 - [x] What is functional programming?
 - **Explain:**
+Functional programming in JavaScript is a sub-paradigm of the Declarative programming paradigm, where functions are treated as first-class citizens[1][2][3][4][5]. It involves writing code without mutating state and data[1], and allows for passing functions as values[3]. Examples of functional programming in JavaScript include passing functions as arguments to other functions, using higher order functions, and using recursion[5]
 - **Use:**
 - **Example:**
 
 - [x] What is the difference between classical inheritance and prototypal inheritance?
 - **Explain:**
+The difference between classical inheritance and prototypal inheritance is that classical inheritance is limited to classes inheriting from other classes while prototypes act as more of a chain[1][2]. In classical inheritance, Generalizations (like the overarching Shoe concept) are just other Objects[3], while in prototypal inheritance, objects are abstractions of real-world entities[4][5].
 - **Use:**
 - **Example:**
 
 - [x] What are the pros and cons of functional programming vs object-oriented programming?
 - **Explain:**
+Functional programming and object-oriented programming are two different paradigms of programming, each with its own advantages and disadvantages. Object-oriented programming (OOP) is procedural programming that uses classes to group code and data together for reusability and simplicity[1], while functional programming (FP) is a declarative programming model that emphasizes the importance of functions over data[2]. OOP works great when the behaviors are fixed but the data types change[3], while FP is a better option when all the objects are clear but the behaviors vary[3]. OOP languages allow developers to establish multiple degrees of visibility for properties and methods, such as private or public[4], while FP does not give importance to data but to functions[2].
 - **Use:**
 - **Example:**
 
 - [x] What are two-way data binding and one-way data flow, and how are they different?
 - **Explain:**
+The difference between two-way data binding and one-way data flow is that two-way data binding provides the ability to take the value of a property and display it on the view while also having an input to automatically update the data
+, while one-way data binding is a situation where information flows in only one direction, typically from a data source to the control[3]
+
 - **Use:**
 - **Example:**
 
 - [x] What is asynchronous programming, and why is it important in JavaScript?
 - **Explain:**
+Asynchronous programming in JavaScript enables programs to start long-running tasks and still be able to respond to other events while the task runs[1][2]. This is done through callback functions, promises, and async and await[3][4][5], which allow programs to execute code in the background without blocking the main thread. An example of this is a program that fetches two resources from the network and then combines them[3].
 - **Use:**
 - **Example:**
