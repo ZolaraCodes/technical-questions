@@ -284,81 +284,114 @@ Examples of Function.prototype.bind include pre-configuring the this keyword to 
 
 - [x] What are the pros and cons of using Promises instead of callbacks?
 - **Explain:**
+The main advantages of using promises instead of callbacks are better defined and organized control flow of asynchronous logic, reduced coupling, composability, and the ability to wait for only one promise to resolve[1][2][3][4]. Promises also provide an object to decide the action that needs to be taken after the async task completes[5]. However, promises are just syntactic sugar and everything that can be done with promises can also be done with callbacks[4].
 - **Use:**
 - **Example:**
 
 - [x] What are some of the advantages/disadvantages of writing Javascript code in a language that compiles to JavaScript?
 - **Explain:**
+Writing JavaScript code in a language that compiles to JavaScript has several advantages, such as speed and ease of reading and writing cross-browser code[1][2]. However, there are also some disadvantages, such as client-side security issues[3], browser support issues[2], lack of debugging facility[4], single inheritance[4], sluggish bitwise function[4], and more[5].
 - **Use:**
 - **Example:**
 
 - [x] What tools and techniques do you use debugging Javascript code?
 - **Explain:**
+There are several tools and techniques for debugging JavaScript code, such as Google Dev Tools, React Dev Tools, Node Inspect, Postman and Webpack[1], as well as the console.log() method, setting breakpoints, and the debugger keyword[2][3]. Additionally, there are various debugging techniques that can be used to enhance efficient running of codes or programs in JavaScript[4].
 - **Use:**
 - **Example:**
 
 - [x] What language constructions do you use for iterating over object properties and array items?
 - **Explain:**
+Common language constructions for iterating over object properties and array items include for loops, for..in, for each..in, map, reduce[1][2], and the for...in loop[3][4][5].
 - **Use:**
 - **Example:**
 
 - [x] Explain the difference between mutable and immutable objects.
 - **Explain:**
+In Python, mutable objects are those whose value can be changed over time[1]
+, while immutable objects are those whose value cannot be changed once they are created
+. Examples of mutable objects include lists and dictionaries, while strings and tuples are examples of immutable objects
+
 - **Use:**
 - **Example:**
 
 - [x] Explain the difference between synchronous and asycnhronous functions.
 - **Explain:**
+Synchronous functions are those that run in a particular sequence of instructions given in the program
+, while asynchronous functions allow for the execution of upcoming instructions immediately
+. Asynchronous code runs in parallel, meaning multiple operations can occur simultaneously
 - **Use:**
 - **Example:**
 
 - [x] What is an event loop? What is the difference between call stack and task queue?
 - **Explain:**
+The Call Stack is a built-in component of the JavaScript runtime[1][2], while the Task/Event Queue is a component of the browser[1]. The Event Loop's job is to move stuff out from the callback queue and back onto the call stack when it is empty[2][3]. The Event Loop has responsibility to see if the call-stack is empty and if there are pending tasks in the task queue to process[4][5].
 - **Use:**
-- **Example:**
+- **Example:** t are the differences between variables created using let, var or const?
 
 - [x] Explain the differences on the usage of foo between function foo(){} and var foo = function (){}
 - **Explain:**
+The difference between function foo(){} and var foo = function (){} is that the former is a function declaration while the latter is a function expression[1][2][3][4]. Function declarations have their body hoisted but function expressions do not[4]
 - **Use:**
 - **Example:**
 
 - [x] What are the differences between variables created using let, var or const?
 - **Explain:**
+ar: Variables declared with var are function scoped, which means they are accessible within the function they are declared in. If a variable is declared with var inside a block, it is hoisted to the top of the function and can be accessed before its declaration. This can lead to unexpected behavior.
+
+let: Variables declared with let are block scoped, which means they are only accessible within the block they are declared in. If a variable is declared with let inside a block, it is not hoisted to the top of the function and cannot be accessed before its declaration.
+
+const: Variables declared with const are also block scoped, and their value cannot be reassigned after they are declared. However, the properties of an object declared with const can be modified.
 - **Use:**
 - **Example:**
 
 - [x] What are the differences between ES6 class and ES5 function constructors?
 - **Explain:**
+The main difference between ES6 class and ES5 function constructors is that ES6 class allows developers to instantiate objects using the new operator[1][2][3][4], while ES5 function constructors create objects by adding functions to their prototypes (Blueprint)[1]. Additionally, ES6 classes have the ability to subclass native classes like Array[5].
 - **Use:**
 - **Example:**
 
 - [x] Can you offer a use case for the new arrow => function syntax? How does this new syntax differ from other functions?
 - **Explain:**
+Arrow functions are a more concise syntax for writing functions compared to regular functions[1][2][3][4][5]. The main differences between arrow and regular functions include the lack of an arguments keyword in arrow functions[3], the inability to use the 'new' keyword with arrow functions[2], and the fact that arrow functions do not have their own this value[5]. Arrow functions are often used when writing callbacks or higher-order functions[4].
 - **Use:**
 - **Example:**
 
 - [x] What advantage is there for using the arrow syntax for a method in a constructor?
 - **Explain:**
 - **Use:**
+The advantage of using arrow syntax for methods in a constructor is that it binds the 'this' keyword to the surrounding code, making the code simpler and shorter
+. Additionally, arrow functions can't be used as constructors since calling them with new throws a TypeError[3]
+. Arrow functions also don't redefine the value of 'this' within their function body, which makes it easier to predict their behavior when used with React[4]
+
 - **Example:**
 
 - [x] What is the definition of a higher-order function?
 - **Explain:**
+A higher-order function is a function that takes one or more functions as arguments and/or returns a function[1]
+ In JavaScript, functions are first-class objects, meaning they can be passed as arguments to other functions and returned from them[5].
 - **Use:**
 - **Example:**
 
 - [x] Can you give an example for destructuring an object or an array?
 - **Explain:**
+Destructuring is a JavaScript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables[1][2][3]. For example, to extract the values of an object prior to ES6, one would have to use the dot notation: var obj = {first: 'Rick', last: 'Sanchez', age: 70}; var first = obj.first[4]. With destructuring, this can be simplified to let {first} = obj[5]. Similarly, for an array, one could use the index notation to assign values to variables: let studentsArr = ['John', 'Jane', 'Bob']; let firstStudent = studentsArr[3]. With destructuring, this can be simplified to let [firstStudent] = studentsArr[3].
 - **Use:**
 - **Example:**
 
 - [x] ES6 Template Literals offer a lot of flexibility in generating strings, can you give an example?
 - **Explain:**
+Template literals, also known as template strings, are a new feature introduced in ECMAScript 2015/ ES6[1][2]. They provide an easy way to interpolate variables and expressions into strings[3][4] and create multiline strings[1][5]. Template literals are enclosed by backtick (`) characters instead of double or single quotes[2][4].
 - **Use:**
 - **Example:**
 
 - [x] Can you give an example of a curry function and why this syntax offers an advantage?
 - **Explain:**
+Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c)[1]
+. Advantages of currying include making it easier to create anonymous functions[3]
+ and transforming functions to take one parameter at a time[4]
+. An example of a curry function is: const curry = (fn) => (x) => (y) => fn(x, y)[2]
+
 - **Use:**
 - **Example:**
 
