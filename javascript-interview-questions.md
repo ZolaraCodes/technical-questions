@@ -175,22 +175,70 @@ It can take any number of arguments and return a new function that calls the ori
 
 - [x] When would you use document.write()?
 - **Explain:**
+document.write() is a JavaScript method that is used to write dynamic HTML content directly to a web page. 
 - **Use:**
+When the web page is loaded, the JavaScript code in the page is executed and document.write() can be used to insert text, HTML code, or even entire web pages into the page.
 - **Example:**
-Examples of Function.prototype.bind include pre-configuring the this keyword to be set to a provided value with a given sequence of arguments preceding any provided when the new function is called[1]
-[2]
-, creating a new function from an existing function[3]
-, and binding the this keyword to an HTML element
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example</title>
+	<script>
+		document.write("Hello World!");
+	</script>
+</head>
+<body>
+</body>
+</html>
+
+When the above code is loaded in a web browser, it will display "Hello World!" on the page.
 
 - [x] What's the difference between feature detection,feature inference, and using the UA string?
 - **Explain:**
+Feature detection, feature inference, and using the User-Agent (UA) string are all methods of detecting what features or capabilities a web browser supports.
 - **Use:**
+Feature detection:
+Feature detection involves writing code that tests whether a particular feature or API is available in the user's browser before using it. This is done by checking if a property or method exists in the browser's global object, such as window or document. 
+
+Feature inference:
+Feature inference involves assuming that a particular feature is supported in a browser based on the presence of another feature.
+
+Using the UA string:
+The UA string is a string of text that identifies the browser and its version number. It can be accessed using JavaScript with the navigator.userAgent property.
+
 - **Example:**
+1.Feature detection:
+// Check if the browser supports the HTML5 canvas element
+if (typeof canvas.getContext === 'function') {
+  // Code that uses the canvas element
+} else {
+  // Fallback code for browsers that don't support the canvas element
+}
+
+2.Feature inference:
+// If the browser supports querySelector, assume it also supports querySelectorAll
+if (document.querySelector) {
+  var elements = document.querySelectorAll('p');
+  // Code that uses the selected elements
+}
+
+3.Using the UA string:
+// Detect if the user is using Internet Explorer
+var isIE = navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > 0;
+if (isIE) {
+  // Code that handles Internet Explorer-specific issues
+}
+
 
 - [x] Explain Ajax in as much detail as possible.
 - **Explain:**
+Ajax (Asynchronous JavaScript and XML) is a web development technique that allows web pages to retrieve and display data from a server without requiring the entire page to be reloaded. 
+
 - **Use:**
+This results in a more seamless and responsive user experience, because the user can interact with the page without having to wait for it to reload.
+
 - **Example:**
+Ajax can be used for a variety of purposes, such as fetching data from a server, submitting form data, and updating content on the page. It is commonly used in web applications to provide a more seamless and responsive user experience.
 
 - [x] What are the advantages and disadvantages of using Ajax?
 - **Explain:**
