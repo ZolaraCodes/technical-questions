@@ -239,7 +239,7 @@ This results in a more seamless and responsive user experience, because the user
 
 - **Example:**
 Ajax can be used for a variety of purposes, such as fetching data from a server, submitting form data, and updating content on the page. It is commonly used in web applications to provide a more seamless and responsive user experience.
-------------------------------------------—-------------
+
 - [x] What are the advantages and disadvantages of using Ajax?
 - **Explain:**
 improved user experience,increased interactivity,Cross-platform compatibility. Disadvantages: seo complications, accessibility issues, complexity. 
@@ -253,16 +253,29 @@ Cross-platform compatibility: Ajax works across different platforms and browsers
 Accessibility issues: Ajax can present accessibility issues for users with disabilities, as it can make it difficult for assistive technologies to interact with the page.
 
 Complexity: Ajax can add complexity to web applications, making them more difficult to develop and maintain.
---------------------------------------------------------
+
 
 - [x] Explain how JSONP works (and how it;s not really Ajax).
 - **Explain:**
+JSONP (JSON with Padding) is a technique for retrieving data from a server in a different domain than the one that the web page is hosted on.
 - **Use:**
+It is often used as a workaround for the same-origin policy, which restricts web pages from making requests to servers in different domains.
 - **Example:**
+<script src="http://api.example.net/data?callback=myCallback"></script>
+
+<script>
+  function myCallback(data) {
+    console.log(data);
+  }
+</script>
+
+This code fetches JSON data from http://api.example.net/data using JSONP and passes it to the myCallback function defined on the page. The console.log statement will print the data to the console.
 
 - [x] Have you ever used JavaScript templating? If so, what libraries have you used?
 - **Explain:**
+JavaScript templating is a technique for generating HTML markup (or other text-based formats) using JavaScript code
 - **Use:**
+
 - **Example:**
 
 - [x] Explain "hoisting"?
