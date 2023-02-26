@@ -295,19 +295,46 @@ function example() {
 
 - [x] Describe event bubbling.
 - **Explain:**
-
+Event bubbling is a concept in which when an event is triggered on an element, it propagates through its parent elements in the DOM hierarchy until it reaches the document root. This means that if an event is triggered on a child element, it will also trigger the same event on all of its parent elements. 
 - **Use:**
+This allows event handlers to be triggered at different levels of the DOM hierarchy, allowing for more flexible and powerful event handling.
 - **Example:**
+<div id="parent">
+  <button id="button">Click me!</button>
+</div>
+// add an event listener to the parent element
+document.querySelector('#parent').addEventListener('click', function(event) {
+  console.log('Parent element clicked!');
+});
+
+// add an event listener to the button element
+document.querySelector('#button').addEventListener('click', function(event) {
+  console.log('Button clicked!');
+});
+
+In this example, when the user clicks the button, the click event is first triggered on the button element itself, then on its parent element (the parent div). This results in the following output in the console:
 
 - [x] What's the difference between an "attribute" and a property?
 - **Explain:**
+  an attribute is a value specified in HTML markup that provides additional information about an element, while a property is a value assigned to an object in JavaScript that can be accessed and modified programmatically
 - **Use:**
+Attributes are used to set initial property values, while properties can be modified dynamically as an application runs. 
 - **Example:**
+<img id="my-image" src="image.jpg" alt="A beautiful image">
+In this example, we have an img element with an id attribute and three properties: id, src, and alt. The id attribute specifies a unique identifier for the element, while the src and alt properties specify the source URL and alternate text for the image, respectively.
+We can access and modify these properties using JavaScript
 
 - [x] Why is extending built-in JavaScript objects not a good idea?
 - **Explain:**
+ Extending built-in JavaScript objects, such as Array, Object, or String, can lead to unexpected behavior and potential bugs in your code.
 - **Use:**
+Convenience: In some cases, extending a built-in object can make code more concise and easier to read. For example, adding a custom method to the Array prototype that performs a common operation could make code that uses that method more readable than if the same operation was performed using a separate utility function.
+
+Compatibility: If you are working with a legacy codebase that relies on an extended built-in object, it may be necessary to continue extending that object in order to maintain compatibility with existing code.
 - **Example:**
+Convenience: In some cases, extending a built-in object can make code more concise and easier to read. For example, adding a custom method to the Array prototype that performs a common operation could make code that uses that method more readable than if the same operation was performed using a separate utility function.
+
+Compatibility: If you are working with a legacy codebase that relies on an extended built-in object, it may be necessary to continue extending that object in order to maintain compatibility with existing code.
 
 - [x] Difference between document load event and document DOMContentLoaded event?
 - **Explain:**
