@@ -8,11 +8,13 @@
 - **Example:** Able to hide messages with delegation.
 
 - [x] Explain how this works in Javascript.
-- **Explain:** Efficiently handles events within one event listener.
+- **Explain:** 
+Event delegation is a technique in JavaScript where you add an event listener to a parent element instead of each individual child element. 
 - **Use:**
-- **Example:** Create a tree that shows/hides node children on click.
+To implement event delegation, you first attach a single event listener to a parent element, such as a div or document object. Then, you use conditional statements in the event handler function to check if the target element matches a certain selector or has a certain class name.
+- **Example:** 
+The benefits of using event delegation include improved performance and reduced code complexity, especially for large or dynamic web pages- [x] Explain how prototypal inheritance works?
 
-- [x] Explain how prototypal inheritance works?
 - **Explain:** Every object with its methods and properties contains an internal and hidden property known as Prototype.
 - **Use:** An object can inherit the properties and methods of another object.
 - **Example:** 
@@ -43,7 +45,8 @@ Undeclared variables do not exist until the code assigning to them is executed,U
 null expresses a lack of identification, indicating that a variable points to no object.
 undefined is a non-configurable, non-writable property. Even when this is not the case, avoid overriding it.
 A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value.
-- **Example:**
+
+**Example:**
 let snack
 console.log(snack)
 // undefined
@@ -280,11 +283,19 @@ JavaScript templating is a technique for generating HTML markup (or other text-b
 
 - [x] Explain "hoisting"?
 - **Explain:**
-- **Use:**
-- **Example:**
+Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their respective scopes during the compilation or interpretation phase, before the actual code execution. 
+-**Use:**
+For example, if you have a variable declaration after its usage in a function, hoisting will move the declaration to the top of the function scope:
+**Example:**
+function example() {
+  console.log(x); // Output: undefined
+  var x = "hello";
+  console.log(x); // Output: "hello"
+}
 
 - [x] Describe event bubbling.
 - **Explain:**
+
 - **Use:**
 - **Example:**
 
