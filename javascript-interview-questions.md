@@ -82,7 +82,7 @@ The forEach() method receives a function as an argument and executes it once for
 - **Use:**
 You can use a map loop to return a new array ie solving an equation. you can use a forEach loop to find name ina  database
 - **Example:**
-`forEach example
+forEach example
 const myAwesomeArray = [
 
   { id: 1, name: "john" },
@@ -102,7 +102,7 @@ myAwesomeArray.map(x => x * x)
 
 
 
-// >>>>>>>>>>>>>>>>> Output: [25, 16, 9, 4, 1]`
+// >>>>>>>>>>>>>>>>> Output: [25, 16, 9, 4, 1]
 
 Map example 
 
@@ -112,10 +112,10 @@ An anonymous function is a function that does not have any name associated with 
 - **Use:**
 we use an anonymous function as a self-invoking function (a special function that is invoked right after it is declared and also does not have any kind of name associated with it) 
 - **Example:**
- `(function () {
+ (function () {
 
         console.log("Welcome to GeeksforGeeks!");
-    })();`
+    })();
 
 - [x]  How do you organize your code? (module pattern, classical inheritance?)
 - **Explain:**
@@ -146,7 +146,7 @@ Var person new person: In this case, we have the introduction of the new keyword
 
 - **Example:**
 
-`function Person(name) {
+function Person(name) {
   this.name = name;
 }
 var person = Person('John');
@@ -154,7 +154,7 @@ console.log(person); // undefined
 console.log(person.name); // Uncaught TypeError: Cannot read property 'name' of undefined
 var person = new Person('John');
 console.log(person); // Person { name: "John" }
-console.log(person.name); // "john"`
+console.log(person.name); // "john"
 
 - [x] What's the difference between .call and .apply?
 - **Explain:**
@@ -162,12 +162,12 @@ call takes in comma-separated arguments as the next arguments while .apply takes
 - **Use:**
 Both .call and .apply are used to invoke functions and the first parameter will be used as the value of this within the function. 
 - **Example:**
-`function add(a, b) {
+function add(a, b) {
 
   return a + b;
 }
 console.log(add.call(null, 1, 2)); // 3
-console.log(add.apply(null, [1, 2])); // 3`
+console.log(add.apply(null, [1, 2])); // 3
 
 - [x] Explain Function.prototype.bind.
 - **Explain:**
@@ -185,10 +185,10 @@ When the web page is loaded, the JavaScript code in the page is executed and doc
 <!DOCTYPE html>
 <html>
 <head>
-	`<title>Example</title>
+	<title>Example</title>
 	<script>
 		document.write("Hello World!");
-	</script>`
+	</script>
 </head>
 <body>
 </body>
@@ -211,26 +211,26 @@ The UA string is a string of text that identifies the browser and its version nu
 
 - **Example:**
 1.Feature detection:
-`// Check if the browser supports the HTML5 canvas element
+// Check if the browser supports the HTML5 canvas element
 if (typeof canvas.getContext === 'function') {
   // Code that uses the canvas element
 } else {
   // Fallback code for browsers that don't support the canvas element
-}`
+}
 
 2.Feature inference:
-`// If the browser supports querySelector, assume it also supports querySelectorAll
+// If the browser supports querySelector, assume it also supports querySelectorAll
 if (document.querySelector) {
   var elements = document.querySelectorAll('p');
   // Code that uses the selected elements
-}`
+}
 
 3.Using the UA string:
-`// Detect if the user is using Internet Explorer
+// Detect if the user is using Internet Explorer
 var isIE = navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > 0;
 if (isIE) {
   // Code that handles Internet Explorer-specific issues
-}`
+}
 
 
 - [x] Explain Ajax in as much detail as possible.
@@ -264,13 +264,13 @@ JSONP (JSON with Padding) is a technique for retrieving data from a server in a 
 - **Use:**
 It is often used as a workaround for the same-origin policy, which restricts web pages from making requests to servers in different domains.
 - **Example:**
-`<script src="http://api.example.net/data?callback=myCallback"></script>
+<script src="http://api.example.net/data?callback=myCallback"></script>
 
 <script>
   function myCallback(data) {
     console.log(data);
   }
-</script>`
+</script>
 
 This code fetches JSON data from http://api.example.net/data using JSONP and passes it to the myCallback function defined on the page. The console.log statement will print the data to the console.
 
@@ -287,11 +287,11 @@ Hoisting is a behavior in JavaScript where variable and function declarations ar
 -**Use:**
 For example, if you have a variable declaration after its usage in a function, hoisting will move the declaration to the top of the function scope:
 **Example:**
-`function example() {
+function example() {
   console.log(x); // Output: undefined
   var x = "hello";
   console.log(x); // Output: "hello"
-}`
+}
 
 - [x] Describe event bubbling.
 - **Explain:**
@@ -299,7 +299,7 @@ Event bubbling is a concept in which when an event is triggered on an element, i
 - **Use:**
 This allows event handlers to be triggered at different levels of the DOM hierarchy, allowing for more flexible and powerful event handling.
 - **Example:**
-`<div id="parent">
+<div id="parent">
   <button id="button">Click me!</button>
 </div>
 // add an event listener to the parent element
@@ -310,7 +310,7 @@ document.querySelector('#parent').addEventListener('click', function(event) {
 // add an event listener to the button element
 document.querySelector('#button').addEventListener('click', function(event) {
   console.log('Button clicked!');
-});`
+});
 
 In this example, when the user clicks the button, the click event is first triggered on the button element itself, then on its parent element (the parent div). This results in the following output in the console:
 
