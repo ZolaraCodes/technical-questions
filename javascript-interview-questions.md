@@ -349,8 +349,11 @@ Compatibility: If you are working with a legacy codebase that relies on an exten
 
 - [x] Explain the same-origin policy with regards to Javascript.
 - **Explain:**
+The Same Origin Policy is a security feature implemented in web browsers that restricts scripts running in a web page from accessing resources located in a different origin (i.e., domain, protocol, and port) than the one that served the page. 
 - **Use:**
+The purpose of the Same Origin Policy is to prevent malicious websites from accessing or manipulating sensitive data or resources belonging to other websites or users without permission. By enforcing this policy, web browsers ensure that only trusted resources can interact with each other and protect users from cross-site scripting (XSS) attacks, session hijacking, and other security vulnerabilities.
 - **Example:**
+For example, a JavaScript code running on a web page loaded from "https://example.com" cannot access cookies or other resources of a web page loaded from "https://google.com". However, JavaScript code from the same origin, i.e., the same domain, protocol, and port, can access the resources
 
 - [x] Make this work: duplicate ([1,2,3,4,5]); //[1,2,3,4,5,1,2,3,4,5]
 - **Explain:**
@@ -414,8 +417,11 @@ There are several tools and techniques for debugging JavaScript code, such as Go
 - **Explain:**
 Common language constructions for iterating over object properties and array items include for loops, for..in, for each..in, map, reduce[1][2], and the for...in loop[3][4][5].
 - **Use:**
+ language constructions in JavaScript provide the tools necessary to create complex programs by defining and manipulating data, controlling program flow, and performing specific tasks through reusable code blocks.
 - **Example:**
-
+Data types are used to define the kind of data a variable can store, such as strings, numbers, or boolean values. Variables are used to store and manipulate data values, while functions are reusable blocks of code that perform a specific task.
+Loops and conditional statements are used to control the flow of execution in a program, allowing certain blocks of code to run repeatedly or conditionally based on specific conditions.
+                                                                                                         
 - [x] Explain the difference between mutable and immutable objects.
 - **Explain:**
 In Python, mutable objects are those whose value can be changed over time[1]
