@@ -32,7 +32,7 @@ In order to make the second parens (immediately) invoke foo(), we need to make t
 **Use:**
 If code returns a token error
 - **Example:**
-(function foo(){ console.log('Hello from foo!') }()); // "Hello from foo!"
+'(function foo(){ console.log('Hello from foo!') }()); // "Hello from foo!"'
 
 - [x] What's the difference between a variable that is: null, undefined or undeclared? How would you go about checking for any of these states?
 - **Explain:**
