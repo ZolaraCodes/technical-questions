@@ -62,7 +62,7 @@ A closure is the combination of a function bundled together (enclosed) with refe
 - **Use:**
 They allow you to attach variables to an execution context. Variables in closures can help you maintain a state that you can use later. 
 - **Example:**
-`function init() {
+function init() {
   var name = "Mozilla"; // name is a local variable created by init
   function displayName() {
     // displayName() is the inner function, that forms the closure
@@ -70,7 +70,7 @@ They allow you to attach variables to an execution context. Variables in closure
   }
   displayName();
 }
-init();`
+init();
 
 allow you to display the display name as Mozilla
 
@@ -320,7 +320,7 @@ In this example, when the user clicks the button, the click event is first trigg
 - **Use:**
 Attributes are used to set initial property values, while properties can be modified dynamically as an application runs. 
 - **Example:**
-`<img id="my-image" src="image.jpg" alt="A beautiful image">`
+<img id="my-image" src="image.jpg" alt="A beautiful image">
 In this example, we have an img element with an id attribute and three properties: id, src, and alt. The id attribute specifies a unique identifier for the element, while the src and alt properties specify the source URL and alternate text for the image, respectively.
 We can access and modify these properties using JavaScript
 
@@ -345,7 +345,7 @@ Compatibility: If you are working with a legacy codebase that relies on an exten
 - **Explain:** These both are comparison operators. 
 - **Use:** The one with two equal signs are for value and the three equal signs are used for value and type.
 - **Example:**
-`3 == '3' would return True 3 === '3' would return false`
+3 == '3' would return True 3 === '3' would return false
 
 - [x] Explain the same-origin policy with regards to Javascript.
 - **Explain:**
