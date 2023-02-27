@@ -47,7 +47,7 @@ undefined is a non-configurable, non-writable property. Even when this is not th
 A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value.
 
 **Example:**
-```let snack
+let snack
 console.log(snack)
 // undefined
 const snack = null
