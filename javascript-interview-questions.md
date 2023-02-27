@@ -32,7 +32,7 @@ In order to make the second parens (immediately) invoke foo(), we need to make t
 **Use:**
 If code returns a token error
 - **Example:**
-```(function foo(){ console.log('Hello from foo!') }()); // "Hello from foo!" ```
+```(function foo(){ console.log('Hello from foo!') }()); // "Hello from foo!" 
 
 - [x] What's the difference between a variable that is: null, undefined or undeclared? How would you go about checking for any of these states?
 - **Explain:**
@@ -54,7 +54,7 @@ const snack = null
 console.log(snack)
 // null
 console.log(snack)
-// ReferenceError: snack is not defined```
+// ReferenceError: snack is not defined§:
 
 - [x] What is a closure, and how/why would you use one?
 - **Explain:**
@@ -62,7 +62,7 @@ A closure is the combination of a function bundled together (enclosed) with refe
 - **Use:**
 They allow you to attach variables to an execution context. Variables in closures can help you maintain a state that you can use later. 
 - **Example:**
-```function init() {
+`function init() {
   var name = "Mozilla"; // name is a local variable created by init
   function displayName() {
     // displayName() is the inner function, that forms the closure
@@ -70,7 +70,7 @@ They allow you to attach variables to an execution context. Variables in closure
   }
   displayName();
 }
-init();```
+init();`
 
 allow you to display the display name as Mozilla
 
