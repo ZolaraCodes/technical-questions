@@ -55,7 +55,7 @@ function getName() {
 - [x] What is polymorphism?
 - **Explain:** the same function with different signatures called many times. 
 - **Use:** use the same method name repeatedly, and reduce the number of functionalities that can be paired together.
-- **Example:** three function with the same name and different operations. (inheritance polymorphism)
+- **Example:** three objects with the same name and different operations. (inheritance polymorphism)
 ```
 <script>
     class firstClass {
